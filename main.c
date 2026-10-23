@@ -10,20 +10,26 @@ int main(void)
     int value = 0;
 
     // All of the functions are zero-based. (ex. 0, 1, 2, etc)
-    // All of the functions take integery arrays, for right now.
+    // All of the functions take integer arrays, for right now.
+
     // linear_search(array, length, value);
     // binary_search(array, length, value);
 
     /*
-        You can remove the for loop and uncomment a function above,
-        if you'd like to find a single value the array.
+        You can remove the for loop below and uncomment a function above,
+        if you'd like to find a single value within the array manually.
 
-        Or you can keep the for loop and loop through every element within the array.
+        Or, you can keep the for loop below
+        and loop through every element within the array.
     */
 
     for (int i = 0; i < length; i++)
     {
         value++;
+
+        // Uncomment any function to use it within this for loop.
+
+        // linear_search(array, length, value);
         binary_search(array, length, value);
     }
 
