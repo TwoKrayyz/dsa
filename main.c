@@ -4,7 +4,7 @@ int linear_search(int array[], int size, int value);
 
 int main(void)
 {
-    int array[] = { 1, 2, 3, 4, 5, 7, 8, 9, 10 };
+    int array[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
     int size = sizeof(array) / sizeof(array[0]);
 
@@ -12,7 +12,7 @@ int main(void)
 
     int index = linear_search(array, size, value);
 
-    if (index != 1)
+    if (index != -1)
     {
         printf("The value %d is at index %d in the array.\n", value, index);
     }
